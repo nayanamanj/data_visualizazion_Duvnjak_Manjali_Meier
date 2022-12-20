@@ -4,5 +4,5 @@
 
 Our work intends to demonstrate the pattern of student addiction on alcohol
 
-[link to page](https://nayanamanj.github.io/data_visualizazion_Duvnjak_Manjali_Meier/alchohol_student_consumption/)
+[link to page](https://nayanamanj.github.io/data_visualizazion_Duvnjak_Manjali_Meier/student_alcohol_consumption/)
 
