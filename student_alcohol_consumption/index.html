@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Student Alcohol Consumption | Social, gender and study visualisations from secondary school students</title>
+      <meta name="description"content="Our work intends to demonstrate the pattern of student addiction on alcohol">
+      <meta name="author" content="Ivan Duvnjak, Nayana Manjali ">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- allow webpage to be run in full-screen mode -->
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <!-- set nav bar color -->
+      <meta name="theme-color" content="black">
+      <!-- Chrome, Firefox OS and Opera -->
+      <meta name="msapplication-navbutton-color" content="black">
+      <!-- Windows Phone -->
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <!-- iOS Safari -->
+      <link type="text/css" rel="stylesheet" href="assets/style/style.css">
+   </head>
+   <body>
+      <div id="topbar">
+         <nav>
+            <div class="go_home">
+               <a href="../" title="Go back home">
+               <span>
+               ←
+               </span>
+               <span>
+               Data visualization course
+               </span>
+               </a>
+            </div>
+         </nav>
+      </div>
+      <main>
+         <header >
+            <h1 style="font-size:5vw" > Student Alcohol Consumption</h1>
+            <h3>by Ivan Duvnjak, Nayana Manjali</h3>
+         </header>
+         <section class="no_margin" >
+            <div class="download">
+               <div>
+                  <a style="border-width:3px; border-style:solid; border-color:black; padding: 1em;" href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
+                  ↓ Dataset
+                  </a>
+               </div>
+               <div>
+                  <a style="border-width:3px; border-style:solid; border-color:black; padding: 1em;" href="assets/dataviz/Visualisation protocol.pdf" title="Download visualization protocol">
+                  ↓ Visualization protocol
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section>
+            <div class="container">
+               <iframe width='48%' height='600px' src="https://api.mapbox.com/styles/v1/duvni/clb6srguh004a14s0iudu3eny.html?title=false&access_token=pk.eyJ1IjoiZHV2bmkiLCJhIjoiY2xhZnplemljMThjZzN3b3ltNjFkbXBtYSJ9.JYohS1ZboXIE5Mk1on_57Q&zoomwheel=false#15.41/38.571652/-7.907953" title="Evora" style="border:none;"></iframe>
+               <iframe width='48%' height='600px' src="https://api.mapbox.com/styles/v1/duvni/clb6thglz000g14o416zvepep.html?title=false&access_token=pk.eyJ1IjoiZHV2bmkiLCJhIjoiY2xhZnplemljMThjZzN3b3ltNjFkbXBtYSJ9.JYohS1ZboXIE5Mk1on_57Q&zoomwheel=false#14.54/39.29627/-7.4299" title="Portalegre " style="border:none;"></iframe>
+            </div>
+            <section class="no_margin">
+               <div class="download">
+                  <div>
+                     <h1>
+                        Evora
+                     </h1>
+                  </div>
+                  <div>
+                     <h1>
+                        Portalegre
+                     </h1>
+                  </div>
+               </div>
+            </section>
+            <figure>
+               <img src="assets/images/gp.png" width="49%"  height="1000" style="display:inline;">
+               <div style="display:inline;width:5px;"></div>
+               <img src="assets/images/ms.png" width="49%"  height="1000" style="display:inline;">
+            </figure>
+         </section>
+         <article>
+            </section>
+            </div>
+            <section id="abstract">
+               <strong>
+               The consumption of alcohol by students is generally considered to be
+               socially significant issue and is a source of worry for many parents and school administrators. Previous studies have shown that drinking alcohol negatively impacts students because they are unable to balance their academic work and social lives, which can lead to potential dropouts and failing classes. On the other hand, some studies have indicated that drinking alcohol has little to no impact on a student's performance. The goal of this visualisation is to determine whether or not drinking alcohol affects students' academic grades and how their surroundings can influence their alcohol consumption.
+               </strong>
+            </section>
+            <section>
+               <h4 style="font-size:2vw">
+                  Does the surrounding of the student have any influence on his/her alcohol consumption?
+               </h4>
+               <p style="font-size: 25px">
+                  Initially, we wanted to know how a student’s surroundings can affect his/her alcohol consumption, for instance, if a student lives in a  city with lots of pubs, clubs, and restaurants he/she would be more exposed to alcohol whereas one who has less or no pubs, clubs and such places in his/her city the student will have less access to alcohol. Therefore we collected some information about the two cities in which the highschool was located.
+               <p style="font-size: 25px">
+                  Évora, the city in which Gabriel Pereira (GP)  school is located, is a medium-sized city with lots of historical landmarks. Because of its long and rich history, monuments and structures are the main draw for visitors. Moreover, the municipality and other organisations sponsor a large number of "Festas Populares" honouring saints, holidays, "Feiras" (fairs), and cultural events (like televised musical performances). On the other side, Portalegre where the other school, ​​Mousinho da Silveira (MS) is located, is a small city with religious sites, museums etc.  We plotted the maps of the two cities using mapbox and marked down the places in which alcohol sale could be possible, for instance bars, restaurants, pubs etc. As shown on the map, Evora has more pubs, restaurants and bars compared to Portalegre. This could be because Evora is a touristic area, so it would have to meet up the touristic needs. On contrary to the output of this map, we got a different result. Students in the Portalegre region tend to drink slightly more than of the students in Evora.
+               </p>
+            </section>
+            </section>
+            <section>
+               <h4 style="font-size:2vw">
+                  Is there a correlation between the student's grade and their alcohol consumption?
+               </h4>
+               <p style="font-size: 25px">
+                  The second question that arose in our mind was if there were any particular relation between students’ alcohol consumption and their performance in school. As it is a common belief that one who drinks a lot has a lower academic performance compared to one who avoids alcohol. In order to verify whether the latter hypothesis is true, we decided to plot an alluvial plot with the help of Rawgraphs.
+               </p>
+               <p style="font-size: 25px">
+                  The two variables that we took into account are the alcohol consumption range and the grade range. The alcohol consumption column was derived by taking the mean of the  two columns Dalc (workday alcohol consumption) and Walc (weekend alcohol consumption), which was further grouped from high to low. The grade range column was derived by grouping the column G3 (final grade) according to the Portuguese grading system, shown below:
+               </p>
+               <table style="width: 30%; margin-left: auto; margin-right: auto;" border="3" >
+                  <tbody>
+                     <tr style="height: 23px;">
+                        <td style="height: 23px;">&nbsp;18 to 20</td>
+                        <td style="height: 23px;">&nbsp;Excellent</td>
+                     </tr>
+                     <tr style="height: 23.5px;">
+                        <td style="height: 23.5px;">&nbsp;16 to 17</td>
+                        <td style="height: 23.5px;">&nbsp;Very good</td>
+                     </tr>
+                     <tr style="height: 23px;">
+                        <td style="height: 23px;">&nbsp;14 to 15</td>
+                        <td style="height: 23px;">&nbsp;Good</td>
+                     </tr>
+                     <tr style="height: 23px;">
+                        <td style="height: 23px;">&nbsp;10 to 13</td>
+                        <td style="height: 23px;">&nbsp;Sufficient</td>
+                     </tr>
+                     <tr style="height: 23px;">
+                        <td style="height: 23px;">&nbsp;0 to 9</td>
+                        <td style="height: 23px;">&nbsp;Fail</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <!-- DivTable.com -->
+               </p>
+               <p style="font-size: 25px">
+                  The output of the graph sustains the aforementioned hypothesis. The students who drink too much often fail or score low marks. But this does not mean that the students who consume less or no alcohol always get a good score.
+               <p>
+            </section>
+         </article>
+         <section class="no_margin">
+         </section>
+         <section class="no_margin">
+            <figure>
+               <object type="image/svg+xml" data="assets/dataviz/student_alcohol.svg" id="student_alcohol" width="2000" style="vertical-align:middle;margin:0px 10px" ></object>
+               <figcaption>Alluvial plot of Grades and Alcohol Consumption</figcaption>
+            </figure>
+         </section>
+         <article>
+            <section>
+               <h4 style="font-size:2vw">
+                  Conclusion
+               </h4>
+               <p style="font-size: 25px">
+                  Small levels of alcohol consumption do have some degree of correlation with improved exam marks but are not a clear causal factor. This can be because there are other factors such as relationships, family status, family size that might also have an impact on how the students drink. On the other hand, high levels of alcohol consumption result in lower exam scores. Therefore we can conclude that the academic performance of a student is very likely to be affected by alcohol abuse, especially heavy episodic drinking.
+               </p>
+               <p style="font-size: 25px">
+                  Initially, we thought that if a student has high amount of facility to consume alcohol, for instance, if the city he/she lives in has lots of bars, clubs, and restaurants. But by plotting the map, we were not  able to clearly see a strong correlation between how much they drink and their surroundings. This can be also because we have students from two areas. We could have gotten a clarified result if the analysis was conducted on more schools.
+               </p>
+               <p>
+               </p>
+            </section>
+         </article>
+         <footer>
+            <section>
+               <div>
+                  <strong>Student Alcohol Consumption</strong><br/>
+                  Social, gender and study data from secondary school students<br/><br/>
+                  Ivan Duvnjak <br/>
+                  Nayana Manjali
+               </div>
+               <div>
+                  <strong>SUPSI</strong><br/>
+                  Bachelor in Data Science and Artificial Intelligence<br/>
+                  Data visualization course<br/><br/>
+                  Teacher: Giovanni Profeta<br/>
+                  Academic year: 2022-2023
+               </div>
+            </section>
+         </footer>
+      </main>
+      <script src="assets/js/highlight.js"></script>
+   </body>
+</html>
