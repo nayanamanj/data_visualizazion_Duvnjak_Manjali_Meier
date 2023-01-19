@@ -87,7 +87,7 @@ figure{
 .download {
 	display: flex;
 	justify-content: space-between;
-	margin: 2rem 22%;
+	margin: 2rem 15%;
 }
 
 /* ---- footer -----*/
@@ -206,3 +206,19 @@ figcaption{
 		width: 100%;
 	}
 }
+
+.horizontal_line {
+            background-color: green;
+            width: 90%;
+            height: 5px;
+            border-top: 5px dotted black;
+            line-height: 80%;
+        }
+
+        .line {
+            border-bottom: 5px solid red;
+            margin-top: 5px;
+            width: 90%;
+        }
+
+
